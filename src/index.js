@@ -50,8 +50,11 @@ SCIPE.on('messageCreate', (message) => {
 
 SCIPE.on('interactionCreate', (interaction) => {
     if (!interaction.isChatInputCommand()) return;     //Checks if message was a slash command, executes code if true
-
-    console.log(interaction);   
+    //console.log(interaction.commandName);              //Displays command output to console 
+    //if (interaction.commandName === 'hey') {
+        //interaction.reply('hey');
+    //}
 });
         
     
+//1284997801134133340

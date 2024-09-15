@@ -4,6 +4,8 @@ S.C.I.P.E.  Smart Computer Interface for Protocol Execution
 Tutorial: https://www.youtube.com/watch?v=KZ3tIGHU314
 Documentation: https://discord.js.org/
 
+For documentation purposes, replace "client" with "SCIPE" in tutorials
+
 
 package.json -> cmd: npm init -y
 nodemon (For auto-updating the bot instead of needing to re-start it all the time) -> cmd: npm install -g nodemon
