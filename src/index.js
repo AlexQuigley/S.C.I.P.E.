@@ -15,5 +15,18 @@ const SCIPE = new Client({
 });
 
 SCIPE.login(token); //Passes the bots token ("password") KEEP SECRET
-//type: 'node src/index.js' in the cmd prompt to run bot
+//type: 'node .' in the cmd prompt to run bot
+//tupe: nodemon in the cmd prompt to run bot with auto-refresh
 
+//----------------------------------------------------------------------------------------------
+//Basic Bot setup ^^^
+
+//Logs to terminal that the bot is online
+SCIPE.on('ready', (bot) => {
+    console.log(`${bot.user.tag} is online.`)
+})
+
+
+SCIPE.on('messageCreate', (message) => {
+    console.log(message)
+})
