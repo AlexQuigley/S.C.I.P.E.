@@ -5,9 +5,13 @@ Tutorial: https://www.youtube.com/watch?v=KZ3tIGHU314
 Documentation: https://discord.js.org/
 
 
-package.json -> cmd: npm init -y
-nodemon (For auto-updating the bot instead of needing to re-start it all the time) -> cmd: npm install -g nodemon
-npm install dotenv
+#Dev Installation
+package.json 
+-> npm init -y
+nodemon (For auto-updating the bot instead of needing to re-start it all the time) 
+-> cmd: npm install -g nodemon
+dotenv (For making environment variables, added security)
+-> npm install dotenv
 
 # How To Start
 To start the bot WITH auto-reboots after code is updated, type 'nodemon' in the terminal
