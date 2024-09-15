@@ -1,5 +1,6 @@
 //Tutorial: https://www.youtube.com/watch?v=KZ3tIGHU314
 const {Client, IntentsBitField} = require('discord.js');
+const {token} = require("./config.json");
 
 //New instance of bot
 const SCIPE = new Client({
