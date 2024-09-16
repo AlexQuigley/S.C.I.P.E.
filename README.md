@@ -1,27 +1,29 @@
-# SCIPE
-S.C.I.P.E.  Smart Computer Interface for Protocol Execution 
-
-## Goals:
-### Automated Student Assignments: 
-Develop a fully automated system that, once students are assigned teams in the Teambuilder app, immediately adds them to the appropriate GitHub repositories and Discord channels without manual intervention. 
+# S.C.I.P.E.  
+### Smart Computer Interface for Protocol Execution    
+  
+  
+  
+### Goals:  
+#### Automated Student Assignments:  
+* Develop a fully automated system that, once students are assigned teams in the Teambuilder app, immediately adds them to the appropriate GitHub repositories and Discord channels without manual intervention.  
  
-### Detect Teams Changes: 
-Ensure that any changes to teams made in the TeamBuilder app automatically update in both GitHub and Discord. Keep both platforms in sync with the current team structure. 
+#### Detect Teams Changes:  
+* Ensure that any changes to teams made in the TeamBuilder app automatically update in both GitHub and Discord. Keep both platforms in sync with the current team structure.  
 
-### Error Detection and Notification System: 
-Create a system that detects and handles errors in the assignment process (e.g., failed API calls) and sends notifications to administrators to resolve issues. 
+#### Error Detection and Notification System:   
+* Create a system that detects and handles errors in the assignment process (e.g., failed API calls) and sends notifications to administrators to resolve issues.  
 
-### Detect Student Error: 
-If invitation to GitHub or Discord was send to all students, but the number of people in the GitHub or Discord doesn’t match to number of people in the team, send email to administrators and team members that some of them didn’t accept the invites.  
+#### Detect Student Error:   
+* If invitation to GitHub or Discord was send to all students, but the number of people in the GitHub or Discord doesn’t match to number of people in the team, send email to administrators and team members that some of them didn’t accept the invites.   
 
-### Long-Term Data Storage and Analytics: 
-Implement a system to store team and student data long-term, allowing for historical analysis of project team structures, participation, and outcomes for improving future course management. 
+#### Long-Term Data Storage and Analytics:   
+* Implement a system to store team and student data long-term, allowing for historical analysis of project team structures, participation, and outcomes for improving future course management.   
 
-# Documentation
+# Documentation  
 - [**Discord.js documentation:**](https://discord.js.org/)
 - [**GitHUb REST API Documentation:**](https://docs.github.com/en/rest?apiVersion=2022-11-28)  
 
-Youtube Vids Thay _mihgt_ be helpful:
+Youtube Vids Thay _might_ be helpful:
 - [GitHub API Tutorial | 2023](https://www.youtube.com/watch?v=-kFyPaHNgXo)  
 - [Intro to Webhooks - Real Time App Automation (Discord Bot, Slack, GitHub)](https://youtu.be/c6d7lfvziRY?si=jgClodcd5T3ZjLhI)  
 - [Building an API with Node.js, Express.js, and OctoKit Tutorial that talks to GitHub](https://youtu.be/1S4CbFlOVF4?si=Gf0WGR37PcV9jz9l) (low quality)  
