@@ -80,7 +80,8 @@ npm install dotenv
 
 [^1]: [**Setup Tutorial**](https://www.youtube.com/watch?v=KZ3tIGHU314) 
 [^2]: The Token value is taken from [Discord Dev](https://discord.com/developers/applications). You can find it located under the `Bot` tab.  
-The Guild_ID can be found by right-clicking the Discord server's name and clicking `Copy Server ID`
-The Bot_ID can be found by right clicking the bot in discord and clicking `Copy User ID`. Alternatively it can also be found in the URL of the bot on [Discord Dev](https://discord.com/developers/applications)
+The Guild_ID can be found by right-clicking the Discord server's name and clicking `Copy Server ID`  
+The Bot_ID can be found by right clicking the bot in discord and clicking `Copy User ID`.  
+Alternatively it can also be found in the URL of the bot on [Discord Dev](https://discord.com/developers/applications)
 
 [^3]: S.C.I.P.E. will output: "SCIPE (Skippy)#7016 is online." to the terminal when the bot is running correctly.
