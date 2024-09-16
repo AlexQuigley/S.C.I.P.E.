@@ -12,7 +12,7 @@ Youtube Vids Thay _might_ be helpful:
 - [Building a Discord Bot to Interact with the GitHub API - A Step-by-Step Guide!](https://youtu.be/1CuXR7NoynI?si=kIiYq5mCn4TjTGwI) (low quality)  
 
 ## Dev Installation
-1) **Install these dependencies:** (If having issues, follow the **_Setup Tutorial_** video) [^1]
+1) **Install these dependencies:** (If having issues, follow the **_Setup Tutorial_** [^1] video)
 ```
 # discord.js - Discord API for JavaScript
 npm install discord.js
