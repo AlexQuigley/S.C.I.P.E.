@@ -18,23 +18,22 @@ If invitation to GitHub or Discord was send to all students, but the number of p
 Implement a system to store team and student data long-term, allowing for historical analysis of project team structures, participation, and outcomes for improving future course management. 
 
 # Documentation
-**Setup Tutorial:** https://www.youtube.com/watch?v=KZ3tIGHU314
-**Discord.js documentation:** https://discord.js.org/
-
-Discord Bot <---> Github API documentation:
-**GitHUb REST API Documentation:** https://docs.github.com/en/rest?apiVersion=2022-11-28  
+- [**Discord.js documentation:**](https://discord.js.org/)
+- [**GitHUb REST API Documentation:**](https://docs.github.com/en/rest?apiVersion=2022-11-28)  
 
 Youtube Vids Thay _mihgt_ be helpful:
-https://www.youtube.com/watch?v=-kFyPaHNgXo 
-https://youtu.be/c6d7lfvziRY?si=jgClodcd5T3ZjLhI 
-https://youtu.be/1S4CbFlOVF4?si=Gf0WGR37PcV9jz9l (low quality)
-    https://youtu.be/1CuXR7NoynI?si=kIiYq5mCn4TjTGwI (part 2)
+- [GitHub API Tutorial | 2023](https://www.youtube.com/watch?v=-kFyPaHNgXo)  
+- [Intro to Webhooks - Real Time App Automation (Discord Bot, Slack, GitHub)](https://youtu.be/c6d7lfvziRY?si=jgClodcd5T3ZjLhI)  
+- [Building an API with Node.js, Express.js, and OctoKit Tutorial that talks to GitHub](https://youtu.be/1S4CbFlOVF4?si=Gf0WGR37PcV9jz9l) (low quality)  
+- [Building a Discord Bot to Interact with the GitHub API - A Step-by-Step Guide!](https://youtu.be/1CuXR7NoynI?si=kIiYq5mCn4TjTGwI) (low quality)  
 
 
 # Dev Installation
-1) **Build Package.json:** (Watch the **_Setup Tutorial_** video if having issues)
+1) **Build Package.json:** (Watch the **_Setup Tutorial_** video if having issues) [^1]
 - package.json (Builds package.json file automatically) 
-`npm init -y`
+```
+npm init -y
+```
 
 2) **Install these dependencies:**
 - **Discord.js** (Discord API for JavaScript)
@@ -46,7 +45,7 @@ npm install -g nodemon
 npm install dotenv
 ```
 
-2) After installing those dependencies, copy the SCIPE GitHub repository to your computer. Once done, add a new file called '.env' to use for storing IDs. Create three values as so:
+2) After installing those dependencies, copy the SCIPE GitHub repository to your computer. Once done, add a new file called '.env' to use for storing IDs [^2]. Create three values as so:
 
 ```
     TOKEN = <Bot Token>         //Copied from the Discord Developer Portal
@@ -75,4 +74,11 @@ npm install dotenv
    }
 ```
 
-4) Assuming everything is correct, the bot should startup when you run 'nodemon' or 'node src/index.js' in the terminal. S.C.I.P.E. will output: "SCIPE (Skippy)#7016 is online." to the terminal when the bot is running correctly. 
+4) Assuming everything is correct, the bot should startup when you run 'nodemon' or 'node src/index.js' in the terminal. [^3] 
+
+[^1]: [**Setup Tutorial**](https://www.youtube.com/watch?v=KZ3tIGHU314) 
+[^2]: The Token value is taken from [Discord Dev](https://discord.com/developers/applications). You can find it located under the `Bot` tab.  
+The Guild_ID can be found by right-clicking the Discord server's name and clicking `Copy Server ID`
+The Bot_ID can be found by right clicking the bot in discord and clicking `Copy User ID`. Alternatively it can also be found in the URL of the bot on [Discord Dev](https://discord.com/developers/applications)
+
+[^3]: S.C.I.P.E. will output: "SCIPE (Skippy)#7016 is online." to the terminal when the bot is running correctly.
