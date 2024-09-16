@@ -1,13 +1,21 @@
 # SCIPE
 S.C.I.P.E.  Smart Computer Interface for Protocol Execution 
 
-Tutorial: https://www.youtube.com/watch?v=KZ3tIGHU314
-Documentation: https://discord.js.org/
+Setup Tutorial: https://www.youtube.com/watch?v=KZ3tIGHU314
+Discord.js documentation: https://discord.js.org/
+
+Discord Bot <---> Github API documentation:
+GitHUb RUST API Documentation: https://docs.github.com/en/rest/collaborators?apiVersion=2022-11-28 
+
+Youtube Tutorials:
+https://youtu.be/c6d7lfvziRY?si=jgClodcd5T3ZjLhI 
+https://youtu.be/1S4CbFlOVF4?si=Gf0WGR37PcV9jz9l (low quality)
+    https://youtu.be/1CuXR7NoynI?si=kIiYq5mCn4TjTGwI (part 2)
 
 For documentation purposes, replace "client" with "SCIPE" in tutorials
 
 
-#Dev Installation
+# Dev Installation
 package.json 
 -> npm init -y
 nodemon (For auto-updating the bot instead of needing to re-start it all the time) 

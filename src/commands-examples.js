@@ -27,14 +27,13 @@ const commands = [
     {
         name: 'add',                                        //Main command name
         description: 'Adds two numbers.',
-        options: [                                   
-            //First Option
+        options: [                                          //First Option
             {
                 name: 'first-number',                       
                 description: 'The first number.',
                 type: ApplicationCommandOptionType.Number,  //Specifies the kind of input (number)
                 choices: [                                  //Allows for pre-set inputs for each option
-                    {
+                    {                                           //Using this prevents users from manually entering in options
                         name: 'one',
                         value: 1,
                     },
@@ -47,11 +46,9 @@ const commands = [
                         value: 3,
                     }
                 ],
-                required: true,                             //Makes this input mandatory 
-                                                            //By default all options are optional unless specified
-            },
-            //Second Option:
-            {
+                required: true,                             //Makes this input mandatory
+            },                                                  //By default all options are optional unless specified
+            {                                               //Second Option:
                 name: 'second-number',
                 description: 'The second number.',
                 type: ApplicationCommandOptionType.Number,

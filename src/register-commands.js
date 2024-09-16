@@ -23,58 +23,10 @@ const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
 */
 
 const commands = [ 
-    //EXAMPLE of how to add a command with multiple options/inputs
-    //*
     {
-        name: 'add',                                        //Main command name
-        description: 'Adds two numbers.',
-        options: [                                   
-            //First Option
-            {
-                name: 'first-number',                       
-                description: 'The first number.',
-                type: ApplicationCommandOptionType.Number,  //Specifies the kind of input (number)
-                choices: [                                  //Allows for pre-set inputs for each option
-                    {
-                        name: 'one',
-                        value: 1,
-                    },
-                    {
-                        name: 'two',
-                        value: 2,
-                    },
-                    {
-                        name: 'three',
-                        value: 3,
-                    }
-                ],
-                required: true,                             //Makes this input mandatory 
-                                                            //By default all options are optional unless specified
-            },
-            //Second Option:
-            {
-                name: 'second-number',
-                description: 'The second number.',
-                type: ApplicationCommandOptionType.Number,
-                choices: [
-                {
-                    name: 'one',
-                    value: 1,
-                },
-                {
-                    name: 'two',
-                    value: 2,
-                },
-                {
-                    name: 'three',
-                    value: 3,
-                }
-            ],
-                required: true,
-            },
-        ],
+        name: '',
+        description: ''
     },
-    //*/
 ];
 
 
