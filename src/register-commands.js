@@ -22,10 +22,18 @@ const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
 * Add new commands here:
 */
 
+//NOTE: Command names CANNOT be uppercase, they MUST be lowercase. 
 const commands = [ 
+    //-----------------------------------
+    /*  TEST CASE - Leave commented out
     {
-        name: '',
-        description: ''
+        name: 'hey',
+        description: 'Replies with Hey!',
+    },
+    //*///-------------------------------
+    {
+        name: 'ping',
+        description: 'Replies with Pong!',
     },
 ];
 
@@ -38,6 +46,9 @@ const commands = [
 * commands and then register all slash commands again, preventing ghost 
 * commands from showing up on server
 */
+
+
+//Please run the 'purge-commands.js' file instead of using this to purge slash commands
 
 //PURGES ALL SCIPE slash commands from a server vvv
 /*     <- Delete first slash to disable, add back to enable
@@ -66,6 +77,8 @@ const commands = [
 })();
 //*/
 //PURGES ALL SCIPE slash commands from a server ^^^
+
+
 
 //REGISTERS NEW SCIPE slash commands with a server vvv
 //*     <- Delete first slash to disable, add back to enable

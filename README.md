@@ -70,11 +70,11 @@ npm install dotenv
    }
 ```
 
-4) Assuming everything is correct, the bot should startup when you run 'nodemon' or 'node src/index.js' in the terminal. [^3] 
+4) Assuming everything is correct, the bot should startup when you run `nodemon` or `node src/index.js` in the terminal. [^3] [^4] 
 
-[^1]: [**Setup Tutorial**](https://www.youtube.com/watch?v=KZ3tIGHU314) 
-[^2]: The Token value is taken from [Discord Dev](https://discord.com/developers/applications). You can find it located under the `Bot` tab.  
+[^1]: [**Setup Tutorial**](https://www.youtube.com/watch?v=KZ3tIGHU314)  
+[^2]: The Token value is taken from [Discord Dev](https://discord.com/developers/applications). You can find it located under the `Bot` tab.   
 The Guild_ID can be found by right-clicking the Discord server's name and clicking `Copy Server ID`  
-The Bot_ID can be found by right clicking the bot in discord and clicking `Copy User ID`. Alternatively it can also be found in the URL of the bot on [Discord Dev](https://discord.com/developers/applications)
-
-[^3]: S.C.I.P.E. will output: "SCIPE (Skippy)#7016 is online." to the terminal when the bot is running correctly.
+The Bot_ID can be found by right clicking the bot in discord and clicking `Copy User ID`. Alternatively it can also be found in the URL of the bot on [Discord Dev](https://discord.com/developers/applications)  
+[^3]: If `nodemon` is returning an error, it means there is an error in the code, not that the setup is incorrect.  
+[^4]: S.C.I.P.E. will output: `SCIPE (Skippy)#7016 is online.` to the terminal when the bot is running correctly.  

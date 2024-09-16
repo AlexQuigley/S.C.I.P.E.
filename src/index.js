@@ -55,15 +55,13 @@ SCIPE.on('interactionCreate', (interaction) => {
             interaction.reply('hey!');
         }
 });
-*/
+//*/
 
+//*
 SCIPE.on('interactionCreate', (interaction) => {
     if (!interaction.isChatInputCommand()) return;     //Checks if message was a slash command, executes code if true
-        
-    if (interaction.commandName === 'add') {
-        const num1 = interaction.options.get('first-number').value;
-        const num2 = interaction.options.get('second-number').value;
-
-        interaction.reply(`${num1} + ${num2} = ${num1 + num2}`)
+        if (interaction.commandName === 'ping') {
+            interaction.reply('pong!');
         }
 });
+//*/
