@@ -30,25 +30,23 @@ Youtube Vids Thay _might_ be helpful:
 
 # Dev Installation
 1) **Install these dependencies:** (If having issues, follow the **_Setup Tutorial_** video) [^1]
-- **Discord.js** (Discord API for JavaScript)
-- **Nodemon** (For auto-updating the bot instead of needing to re-start it all the time) 
-- **Dotenv** (For making environment variables, added security)
 ```
+# discord.js - Discord API for JavaScript
 npm install discord.js
+
+# nodemon - For auto-updating the bot instead of needing to re-start it all the time
 npm install -g nodemon
+
+# dotenv - For making environment variables, added security
 npm install dotenv
 ```
-
 2) After installing those dependencies, copy the SCIPE GitHub repository to your computer. Once done, add a new file called '.env' to use for storing IDs [^2]. Create three values as so:
-
 ```
-    TOKEN = <Bot Token>         //Copied from the Discord Developer Portal
-    GUILD_ID = <Server ID>      //Copied directly from Discord
-    BOT_ID = <Bot ID>           //Copied directly from Discord
+TOKEN = <Bot Token>         
+GUILD_ID = <Server ID>      
+BOT_ID = <Bot ID>           
 ```
-
 3) Once finished, open the VS code terminal (command prompt) and run `npm init -y`. This will build the package.json file, open it and make sure it looks just like this: 
-
 ```
    {
      "name": "scipe",
@@ -67,12 +65,12 @@ npm install dotenv
      }
    }
 ```
-
 4) Assuming everything is correct, the bot should startup when you run `nodemon` or `node src/index.js` in the terminal. [^3] [^4] 
 
 [^1]: [**Setup Tutorial**](https://www.youtube.com/watch?v=KZ3tIGHU314)  
-[^2]: The Token value is taken from [Discord Dev](https://discord.com/developers/applications). You can find it located under the `Bot` tab.   
-The Guild_ID can be found by right-clicking the Discord server's name and clicking `Copy Server ID`  
-The Bot_ID can be found by right clicking the bot in discord and clicking `Copy User ID`. Alternatively it can also be found in the URL of the bot on [Discord Dev](https://discord.com/developers/applications)  
+[^2]: NOTE: Getting the `TOKEN` and `BOT_ID` values require you to have admin access to a constructed bot via [Discord Dev](https://discord.com/developers/applications)  
+The `TOKEN` value is taken from [Discord Dev](https://discord.com/developers/applications). You can find it located under the `Bot` tab.   
+The `Guild_ID` can be found by right-clicking the Discord server's name and clicking `Copy Server ID`  
+The `Bot_ID` can be found by right clicking the bot in discord and clicking `Copy User ID`. Alternatively it can also be found in the URL of the bot on [Discord Dev](https://discord.com/developers/applications)   
 [^3]: If `nodemon` is returning an error, it means there is an error in the code, not that the setup is incorrect.  
 [^4]: S.C.I.P.E. will output: `SCIPE (Skippy)#7016 is online.` to the terminal when the bot is running correctly.  
