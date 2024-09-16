@@ -32,33 +32,47 @@ https://youtu.be/1S4CbFlOVF4?si=Gf0WGR37PcV9jz9l (low quality)
 
 
 # Dev Installation
-1) **Install/Build these npm modules**
+1) **Build Package.json:** (Watch the **_Setup Tutorial_** video if having issues)
+- package.json (Builds package.json file automatically) 
+`npm init -y`
 
-- **discord.js**
+2) **Install these dependencies:**
+- **Discord.js** (Discord API for JavaScript)
+- **Nodemon** (For auto-updating the bot instead of needing to re-start it all the time) 
+- **Dotenv** (For making environment variables, added security)
 ```
 npm install discord.js
-```
-
-- package.json
-```
-npm init -y
-```
-
-- nodemon (For auto-updating the bot instead of needing to re-start it all the time) 
-```
 npm install -g nodemon
-```
-
-- dotenv (For making environment variables, added security)
-```
 npm install dotenv
 ```
 
-2) Once those are installed, copy the GitHub repository to your computer. After that, add a new file called '.env' to use for storing IDs. Create three values as so:
+2) After installing those dependencies, copy the SCIPE GitHub repository to your computer. Once done, add a new file called '.env' to use for storing IDs. Create three values as so:
 
+```
     TOKEN = <Bot Token>         //Copied from the Discord Developer Portal
     GUILD_ID = <Server ID>      //Copied directly from Discord
     BOT_ID = <Bot ID>           //Copied directly from Discord
+```
 
+3) Once finished, open the package.json file and make sure it looks like this: 
 
-3) Assuming everything is correct, the bot should startup when you run 'nodemon' or 'node src/index.js' in the terminal. S.C.I.P.E. will output: "SCIPE (Skippy)#7016 is online." to the terminal when the bot is running correctly. 
+```
+   {
+     "name": "scipe",
+     "version": "1.0.0",
+     "description": "S.C.I.P.E.  Smart Computer Interface for Protocol Execution",
+     "main": "src/index.js",
+     "scripts": {
+       "test": "echo \"Error: no test specified\" && exit 1"
+     },
+     "keywords": [],
+     "author": "",
+     "license": "ISC",
+     "dependencies": {
+       "discord.js": "^14.16.2",
+       "dotenv": "^16.4.5"
+     }
+   }
+```
+
+4) Assuming everything is correct, the bot should startup when you run 'nodemon' or 'node src/index.js' in the terminal. S.C.I.P.E. will output: "SCIPE (Skippy)#7016 is online." to the terminal when the bot is running correctly. 
