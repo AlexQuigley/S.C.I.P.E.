@@ -31,7 +31,7 @@ Youtube Vids Thay _might_ be helpful:
 
 
 # Dev Installation
-1) **Install these dependencies:**
+1) **Install these dependencies:** (If having issues, follow the **_Setup Tutorial_** video) [^1]
 - **Discord.js** (Discord API for JavaScript)
 - **Nodemon** (For auto-updating the bot instead of needing to re-start it all the time) 
 - **Dotenv** (For making environment variables, added security)
