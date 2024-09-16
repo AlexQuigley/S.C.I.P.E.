@@ -70,7 +70,7 @@ npm install dotenv
    }
 ```
 
-4) Assuming everything is correct, the bot should startup when you run 'nodemon' or 'node src/index.js' in the terminal. [^3] 
+4) Assuming everything is correct, the bot should startup when you run `nodemon` or `node src/index.js` in the terminal. [^3] 
 
 [^1]: [**Setup Tutorial**](https://www.youtube.com/watch?v=KZ3tIGHU314) 
 [^2]: The Token value is taken from [Discord Dev](https://discord.com/developers/applications). You can find it located under the `Bot` tab.  
