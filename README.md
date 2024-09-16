@@ -2,7 +2,7 @@
 S.C.I.P.E.  Smart Computer Interface for Protocol Execution 
 
 ## Goals:
-###Automated Student Assignments: 
+### Automated Student Assignments: 
 Develop a fully automated system that, once students are assigned teams in the Teambuilder app, immediately adds them to the appropriate GitHub repositories and Discord channels without manual intervention. 
  
 ### Detect Teams Changes: 
