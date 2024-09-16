@@ -1,23 +1,21 @@
-# S.C.I.P.E.  
-### Smart Computer Interface for Protocol Execution    
-  
-  
+# `S.C.I.P.E.` "Skippy"
+### `Smart Computer Interface for Protocol Execution`
   
 ### Goals:  
 #### Automated Student Assignments:  
-* Develop a fully automated system that, once students are assigned teams in the Teambuilder app, immediately adds them to the appropriate GitHub repositories and Discord channels without manual intervention.  
+> Develop a fully automated system that, once students are assigned teams in the Teambuilder app, immediately adds them to the appropriate GitHub repositories and Discord channels without manual intervention.  
  
 #### Detect Teams Changes:  
-* Ensure that any changes to teams made in the TeamBuilder app automatically update in both GitHub and Discord. Keep both platforms in sync with the current team structure.  
+> Ensure that any changes to teams made in the TeamBuilder app automatically update in both GitHub and Discord. Keep both platforms in sync with the current team structure.  
 
 #### Error Detection and Notification System:   
-* Create a system that detects and handles errors in the assignment process (e.g., failed API calls) and sends notifications to administrators to resolve issues.  
+> Create a system that detects and handles errors in the assignment process (e.g., failed API calls) and sends notifications to administrators to resolve issues.  
 
 #### Detect Student Error:   
-* If invitation to GitHub or Discord was send to all students, but the number of people in the GitHub or Discord doesn’t match to number of people in the team, send email to administrators and team members that some of them didn’t accept the invites.   
+> If invitation to GitHub or Discord was send to all students, but the number of people in the GitHub or Discord doesn’t match to number of people in the team, send email to administrators and team members that some of them didn’t accept the invites.   
 
 #### Long-Term Data Storage and Analytics:   
-* Implement a system to store team and student data long-term, allowing for historical analysis of project team structures, participation, and outcomes for improving future course management.   
+> Implement a system to store team and student data long-term, allowing for historical analysis of project team structures, participation, and outcomes for improving future course management.   
 
 # Documentation  
 - [**Discord.js documentation:**](https://discord.js.org/)
@@ -31,7 +29,7 @@ Youtube Vids Thay _might_ be helpful:
 
 
 # Dev Installation
-1) **Install these dependencies:**
+1) **Install these dependencies:** (If having issues, follow the **_Setup Tutorial_** video) [^1]
 - **Discord.js** (Discord API for JavaScript)
 - **Nodemon** (For auto-updating the bot instead of needing to re-start it all the time) 
 - **Dotenv** (For making environment variables, added security)
