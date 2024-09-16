@@ -16,8 +16,6 @@ dotenv (For making environment variables, added security)
 -> npm install dotenv
 
 # How To Start
-To start the bot WITH auto-reboots after code is updated, type 'nodemon' in the terminal
-
-If nodemon does not work then you can also use 'node .' or 'node src/index.js' to start the bot via the cmd line.
+To start the bot WITH auto-reboots after code is updated, type 'nodemon' in the terminal. If nodemon does not work then you can also use 'node .' or 'node src/index.js' to start the bot via the cmd line.
 
 S.C.I.P.E. will output: "SCIPE (Skippy)#7016 is online." when the bot is running correctly 
