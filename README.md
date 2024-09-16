@@ -31,13 +31,7 @@ Youtube Vids Thay _might_ be helpful:
 
 
 # Dev Installation
-1) **Build Package.json:** (Watch the **_Setup Tutorial_** video if having issues) [^1]
-- package.json (Builds package.json file automatically) 
-```
-npm init -y
-```
-
-2) **Install these dependencies:**
+1) **Install these dependencies:**
 - **Discord.js** (Discord API for JavaScript)
 - **Nodemon** (For auto-updating the bot instead of needing to re-start it all the time) 
 - **Dotenv** (For making environment variables, added security)
@@ -55,7 +49,7 @@ npm install dotenv
     BOT_ID = <Bot ID>           //Copied directly from Discord
 ```
 
-3) Once finished, open the package.json file and make sure it looks like this: 
+3) Once finished, open the VS code terminal (command prompt) and run `npm init -y`. This will build the package.json file, open it and make sure it looks just like this: 
 
 ```
    {
