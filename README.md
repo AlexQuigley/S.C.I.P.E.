@@ -7,7 +7,7 @@ Documentation: https://discord.js.org/
 For documentation purposes, replace "client" with "SCIPE" in tutorials
 
 
-#Dev Installation
+# Dev Installation
 package.json 
 -> npm init -y
 nodemon (For auto-updating the bot instead of needing to re-start it all the time) 
