@@ -1,6 +1,5 @@
 /*----------------------------------------------------------------------------------------------*
-* This is the COMMANDS file that will hold the basic code for all slash commands for the bot.   *
-* Run this file to register new slash commands or to purge slash commands                       *
+* This is an EXAMPLE SETUP of the register-commands.js file.                                    *
 *   Type: "node src/register-commands.js" to run this file                                      *
 *-----------------------------------------------------------------------------------------------*/
 
@@ -16,7 +15,7 @@ const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
 
 
 /*
-* This is an array of objects where each object represents a command
+* Array of objects where each object represents a command
 * REMEMBER: Every new command added here needs to have a 
 * scanner to be listening for that command set up in 'index.js'
 * Add new commands here:

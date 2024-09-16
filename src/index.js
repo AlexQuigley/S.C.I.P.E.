@@ -5,7 +5,6 @@ const {Client, IntentsBitField} = require('discord.js');
 //New instance of bot
 const SCIPE = new Client({
     //Intents = Permissions for your bot 
-    //(https://discord.com/developers/docs/topics/gateway)
     intents: [
         IntentsBitField.Flags.Guilds, 
         IntentsBitField.Flags.GuildMembers,
@@ -14,30 +13,30 @@ const SCIPE = new Client({
     ]
 });
 
+SCIPE.login(process.env.TOKEN);                             //Passes the bots token ("password") and brings the bot online
+SCIPE.on('ready', (client) => {
+    console.log("Don't forget to run register-commands.js")
+    console.log(`${client.user.tag} is online.`)            //Logs in terminal that the bot is online
+});
 
-SCIPE.login(process.env.TOKEN);                             //Passes the bots token ("password")
+
 /*
 * type: 'nodemon' in the cmd prompt to start bot
 * OR
 * type: 'node .' in the cmd prompt to start bot
 *
-* NOTE: If nodemon is returning:
-* "[nodemon] app crashed - waiting for file changes before starting..."
+* NOTE: If nodemon is returning an error when starting
 * then it means your code isn't compiling correctly
 */
-//---------------------------------------------------------------------------------------------- Basic Bot setup ^^^
 
-//---------------------------------------------------------------------------------------------- Bot Commands/Interactions vvv
+//----------------------------------------------------------------- Basic Bot setup ^^^
 
 
-//Logs to terminal that the bot is online
-SCIPE.on('ready', (client) => {
-    console.log(`${client.user.tag} is online.`)
-});
+
+//----------------------------------------------------------------- Bot Commands/Interactions vvv
 
 
 SCIPE.on('messageCreate', (message) => {
-
     if (message.author.bot) {                          //Prevents bot from responding to itself or another bot
         return 0;
     }
@@ -48,13 +47,23 @@ SCIPE.on('messageCreate', (message) => {
     }
 });
 
+//EXAMPLE code for the "/hey" command:
+/*
 SCIPE.on('interactionCreate', (interaction) => {
     if (!interaction.isChatInputCommand()) return;     //Checks if message was a slash command, executes code if true
-    //console.log(interaction.commandName);              //Displays command output to console 
-    //if (interaction.commandName === 'hey') {
-        //interaction.reply('hey');
-    //}
+        if (interaction.commandName === 'hey') {
+            interaction.reply('hey!');
+        }
 });
+*/
+
+SCIPE.on('interactionCreate', (interaction) => {
+    if (!interaction.isChatInputCommand()) return;     //Checks if message was a slash command, executes code if true
         
-    
-//1284997801134133340
+    if (interaction.commandName === 'add') {
+        const num1 = interaction.options.get('first-number').value;
+        const num2 = interaction.options.get('second-number').value;
+
+        interaction.reply(`${num1} + ${num2} = ${num1 + num2}`)
+        }
+});
