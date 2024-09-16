@@ -5,9 +5,9 @@ Setup Tutorial: https://www.youtube.com/watch?v=KZ3tIGHU314
 Discord.js documentation: https://discord.js.org/
 
 Discord Bot <---> Github API documentation:
-GitHUb RUST API Documentation: https://docs.github.com/en/rest/collaborators?apiVersion=2022-11-28 
+GitHUb REST API Documentation: https://docs.github.com/en/rest?apiVersion=2022-11-28  
 
-Youtube Tutorials:
+Youtube Vids Thay mihgt(?) be helpful:
 https://youtu.be/c6d7lfvziRY?si=jgClodcd5T3ZjLhI 
 https://youtu.be/1S4CbFlOVF4?si=Gf0WGR37PcV9jz9l (low quality)
     https://youtu.be/1CuXR7NoynI?si=kIiYq5mCn4TjTGwI (part 2)
@@ -16,11 +16,11 @@ For documentation purposes, replace "client" with "SCIPE" in tutorials
 
 
 # Dev Installation
-package.json 
+- package.json 
 -> npm init -y
-nodemon (For auto-updating the bot instead of needing to re-start it all the time) 
+- nodemon (For auto-updating the bot instead of needing to re-start it all the time) 
 -> cmd: npm install -g nodemon
-dotenv (For making environment variables, added security)
+- dotenv (For making environment variables, added security)
 -> npm install dotenv
 
 # How To Start
