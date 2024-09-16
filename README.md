@@ -8,11 +8,11 @@ For documentation purposes, replace "client" with "SCIPE" in tutorials
 
 
 # Dev Installation
-package.json 
+- package.json 
 -> npm init -y
-nodemon (For auto-updating the bot instead of needing to re-start it all the time) 
+- nodemon (For auto-updating the bot instead of needing to re-start it all the time) 
 -> cmd: npm install -g nodemon
-dotenv (For making environment variables, added security)
+- dotenv (For making environment variables, added security)
 -> npm install dotenv
 
 # How To Start
