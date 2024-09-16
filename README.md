@@ -22,6 +22,9 @@ npm install -g nodemon
 
 # dotenv - For making environment variables, added security
 npm install dotenv
+
+# @octokit/rest - For GitHub API
+npm install octokit/rest
 ```
 2) After installing those dependencies, copy the SCIPE GitHub repository to your computer. Once done, add a new file called '.env' to use for storing IDs [^2]. Create three values as so:
 ```
@@ -48,7 +51,21 @@ BOT_ID = <Bot ID>
      }
    }
 ```
-4) Assuming everything is correct, the bot should startup when you run `nodemon` or `node src/index.js` in the terminal. [^3] [^4] 
+4) Assuming everything is correct, the bot should startup when you run `nodemon` or `node src/index.js` in the terminal. [^3] [^4]
+
+## Dev Goals:  
+#### Automated Student Assignments:  
+> Develop a fully automated system that, once students are assigned teams in the Teambuilder app, immediately adds them to the appropriate GitHub repositories and Discord channels without manual intervention.  
+ 
+#### Detect Teams Changes:  
+> Ensure that any changes to teams made in the TeamBuilder app automatically update in both GitHub and Discord. Keep both platforms in sync with the current team structure.  
+
+#### Error Detection and Notification System:   
+> Create a system that detects and handles errors in the assignment process (e.g., failed API calls) and sends notifications to administrators to resolve issues.  
+#### Detect Student Error:   
+> If invitation to GitHub or Discord was send to all students, but the number of people in the GitHub or Discord doesn’t match to number of people in the team, send email to administrators and team members that some of them didn’t accept the invites.   
+#### Long-Term Data Storage and Analytics:   
+> Implement a system to store team and student data long-term, allowing for historical analysis of project team structures, participation, and outcomes for improving future course management.   
 
 [^1]: [**Setup Tutorial**](https://www.youtube.com/watch?v=KZ3tIGHU314)  
 [^2]: NOTE: Getting the `TOKEN` and `BOT_ID` values require you to have admin access to a constructed bot via [Discord Dev](https://discord.com/developers/applications)  
