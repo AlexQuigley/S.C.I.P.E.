@@ -20,15 +20,6 @@ SCIPE.on('ready', (client) => {
 });
 
 
-/*
-* type: 'nodemon' in the cmd prompt to start bot
-* OR
-* type: 'node .' in the cmd prompt to start bot
-*
-* NOTE: If nodemon is returning an error when starting
-* then it means your code isn't compiling correctly
-*/
-
 //----------------------------------------------------------------- Basic Bot setup ^^^
 
 
@@ -36,6 +27,11 @@ SCIPE.on('ready', (client) => {
 //----------------------------------------------------------------- Bot Commands/Interactions vvv
 
 
+
+
+
+
+/*
 SCIPE.on('messageCreate', (message) => {
     if (message.author.bot) {                          //Prevents bot from responding to itself or another bot
         return 0;
@@ -46,6 +42,7 @@ SCIPE.on('messageCreate', (message) => {
         message.reply('Bot is Online')
     }
 });
+//*/
 
 //EXAMPLE code for the "/hey" command:
 /*
@@ -57,11 +54,39 @@ SCIPE.on('interactionCreate', (interaction) => {
 });
 //*/
 
-//*
+/*
 SCIPE.on('interactionCreate', (interaction) => {
     if (!interaction.isChatInputCommand()) return;     //Checks if message was a slash command, executes code if true
-        if (interaction.commandName === 'ping') {
-            interaction.reply('pong!');
-        }
+        
+    if (interaction.commandName === 'ping') {
+        interaction.reply('pong!');
+    }
+
+    if(interaction.commandName === 'add'){
+        const num1 = interaction.options.get('first-number');
+        const num2 = interaction.options.get('second-number');
+        interaction.reply(`${num1} + ${num2} = ${num1 + num2}`)
+    }
+
+    if(interaction.commandName === 'subtract'){
+        const num1 = interaction.options.get('first-number');
+        const num2 = interaction.options.get('second-number');
+        interaction.reply(`${num1} - ${num2} = ${num1 - num2}`)
+    }
+
+    if(interaction.commandName === 'divide'){
+        const num1 = interaction.options.get('first-number');
+        const num2 = interaction.options.get('second-number');
+        interaction.reply(`${num1} / ${num2} = ${num1 / num2}`)
+    }
+
+    if(interaction.commandName === 'multiply'){
+        const num1 = interaction.options.get('first-number');
+        const num2 = interaction.options.get('second-number');
+        interaction.reply(`${num1} * ${num2} = ${num1 * num2}`)
+    }
+
+
 });
 //*/
+

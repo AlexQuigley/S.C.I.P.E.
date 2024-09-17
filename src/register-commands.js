@@ -6,7 +6,9 @@
 
 //Pulls IDs from .env file
 require('dotenv').config();
-const { //Imports
+
+//Imports
+const { 
     REST,
     Routes,
     ApplicationCommandOptionType 
@@ -17,8 +19,10 @@ const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
 
 /*
 * This is an array of objects where each object represents a command
+*
 * REMEMBER: Every new command added here needs to have a 
-* scanner to be listening for that command set up in 'index.js'
+* scanner listening for that command set up in 'index.js'
+*
 * Add new commands here:
 */
 
@@ -35,50 +39,85 @@ const commands = [
         name: 'ping',
         description: 'Replies with Pong!',
     },
+    /*
+    {
+        name: 'add',
+        description: 'Adds two numbers',
+        options:[
+            {
+                name:'first-number',
+                description: 'The first number.',
+                type: ApplicationCommandOptionType.Number,
+                required: true, 
+            },
+            {
+                name:'second-number',
+                description: 'The second number.',
+                type: ApplicationCommandOptionType.Number,
+                required: true,
+            },
+        ]
+    },
+    {
+        name: 'subtract',
+        description: 'Subtracts two numbers',
+        options:[
+            {
+                name:'first-number',
+                description: 'The first number.',
+                type: ApplicationCommandOptionType.Number,
+                required: true, 
+            },
+            {
+                name:'second-number',
+                description: 'The second number.',
+                type: ApplicationCommandOptionType.Number,
+                required: true,
+            },
+        ]
+    },
+    {
+        name: 'divide',
+        description: 'Divides two numbers',
+        options:[
+            {
+                name:'first-number',
+                description: 'The first number.',
+                type: ApplicationCommandOptionType.Number,
+                required: true, 
+            },
+            {
+                name:'second-number',
+                description: 'The second number.',
+                type: ApplicationCommandOptionType.Number,
+                required: true,
+            },
+        ]
+    },
+    {
+        name: 'multiply',
+        description: 'Multiplies two numbers',
+        options:[
+            {
+                name:'first-number',
+                description: 'The first number.',
+                type: ApplicationCommandOptionType.Number,
+                required: true, 
+            },
+            {
+                name:'second-number',
+                description: 'The second number.',
+                type: ApplicationCommandOptionType.Number,
+                required: true,
+            },
+        ]
+    },
+    //*/
 ];
 
 
 
 //------------------------[v DO NOT TOUCH v]------------------------\\
-
-/*
-* Both of these functions work togeather to completely flush all slash 
-* commands and then register all slash commands again, preventing ghost 
-* commands from showing up on server
-*/
-
-
-//Please run the 'purge-commands.js' file instead of using this to purge slash commands
-
-//PURGES ALL SCIPE slash commands from a server vvv
-/*     <- Delete first slash to disable, add back to enable
-(async () => {
-    try {
-        console.log('Purging slash commands...');
-        await rest.get(Routes.applicationGuildCommands(
-            process.env.BOT_ID,
-            process.env.GUILD_ID
-        )).then(data => {
-            const promises = [];
-            for (const command of data) {
-                const deleteUrl = `${Routes.applicationGuildCommands(
-                    process.env.BOT_ID,
-                    process.env.GUILD_ID
-                )}/${command.id}`;
-                promises.push(rest.delete(deleteUrl));
-            }
-            return Promise.all(promises);
-        })
-        console.log('Slash commands were purged successfully!');
-    } catch (error) {
-        //Error handling
-        console.log(`There was an error: ${error}`)
-    }
-})();
-//*/
-//PURGES ALL SCIPE slash commands from a server ^^^
-
-
 
 //REGISTERS NEW SCIPE slash commands with a server vvv
 //*     <- Delete first slash to disable, add back to enable
