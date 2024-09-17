@@ -14,10 +14,15 @@ const SCIPE = new Client({
 });
 
 SCIPE.login(process.env.TOKEN);                             //Passes the bots token ("password") and brings the bot online
+
+eventHandler(SCIPE);
+
+/* Moved functio to eventHandler
 SCIPE.on('ready', (client) => {
     console.log("Don't forget to run register-commands.js")
     console.log(`${client.user.tag} is online.`)            //Logs in terminal that the bot is online
 });
+//*/
 
 
 //----------------------------------------------------------------- Basic Bot setup ^^^
