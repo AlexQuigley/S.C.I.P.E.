@@ -1,9 +1,10 @@
 
 require('dotenv').config();                                 //grants access to the .env file where the TOKEN is stored
 const {Client, IntentsBitField} = require('discord.js');
+const eventHandler = require('./handlers/eventHandler');
 
 //New instance of bot
-const SCIPE = new Client({
+const client = new Client({
     //Intents = Permissions for your bot 
     intents: [
         IntentsBitField.Flags.Guilds, 
@@ -13,9 +14,9 @@ const SCIPE = new Client({
     ]
 });
 
-SCIPE.login(process.env.TOKEN);                             //Passes the bots token ("password") and brings the bot online
+eventHandler(client);
 
-eventHandler(SCIPE);
+client.login(process.env.TOKEN);                             //Passes the bots token ("password") and brings the bot online
 
 /* Moved functio to eventHandler
 SCIPE.on('ready', (client) => {
@@ -30,9 +31,6 @@ SCIPE.on('ready', (client) => {
 
 
 //----------------------------------------------------------------- Bot Commands/Interactions vvv
-
-
-
 
 
 
@@ -51,7 +49,7 @@ SCIPE.on('messageCreate', (message) => {
 
 //EXAMPLE code for the "/hey" command:
 /*
-SCIPE.on('interactionCreate', (interaction) => {
+client.on('interactionCreate', (interaction) => {
     if (!interaction.isChatInputCommand()) return;     //Checks if message was a slash command, executes code if true
         if (interaction.commandName === 'hey') {
             interaction.reply('hey!');
@@ -60,7 +58,7 @@ SCIPE.on('interactionCreate', (interaction) => {
 //*/
 
 /*
-SCIPE.on('interactionCreate', (interaction) => {
+client.on('interactionCreate', (interaction) => {
     if (!interaction.isChatInputCommand()) return;     //Checks if message was a slash command, executes code if true
         
     if (interaction.commandName === 'ping') {
@@ -94,4 +92,3 @@ SCIPE.on('interactionCreate', (interaction) => {
 
 });
 //*/
-
