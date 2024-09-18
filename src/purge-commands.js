@@ -5,6 +5,10 @@
 * |---------------------------------------------------------|
 */
 
+//WILL BE REPLACED BY 01registerCommands.js <-------
+
+
+
 //grants access to the .env file where the TOKEN is stored
 require('dotenv').config();                                 
 const {REST, Routes } = require('discord.js');
