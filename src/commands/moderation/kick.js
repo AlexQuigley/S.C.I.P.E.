@@ -14,8 +14,7 @@ module.exports = {
 
   callback: async (client, interaction) => {
     const targetUserId = interaction.options.get('target-user').value;
-    const reason =
-      interaction.options.get('reason')?.value || 'No reason provided';
+    const reason = interaction.options.get('reason')?.value || 'No reason provided';
 
     await interaction.deferReply();
 
