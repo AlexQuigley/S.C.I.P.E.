@@ -11,7 +11,7 @@ Youtube Vids Thay _might_ be helpful:
 - [Building an API with Node.js, Express.js, and OctoKit Tutorial that talks to GitHub](https://youtu.be/1S4CbFlOVF4?si=Gf0WGR37PcV9jz9l) (low quality)  
 - [Building a Discord Bot to Interact with the GitHub API - A Step-by-Step Guide!](https://youtu.be/1CuXR7NoynI?si=kIiYq5mCn4TjTGwI) (low quality)  
 
-## Dev Installation
+## Dev Installation - [Needs to be Updated as of version 0.2.0]
 1) **Install these dependencies:** (If having issues, follow the **_Setup Tutorial_** [^1] video)
 ```
 # discord.js - Discord API for JavaScript
@@ -52,6 +52,8 @@ BOT_ID = <Bot ID>
    }
 ```
 4) Assuming everything is correct, the bot should startup when you run `nodemon` or `node src/index.js` in the terminal. [^3] [^4]
+
+## File Structure:
 
 ## Dev Goals:  
 #### Automated Student Assignments:  
