@@ -59,6 +59,7 @@ module.exports = {
       );
     } catch (error) {
       console.log(`There was an error when kicking: ${error}`);
+      await interaction.editReply(`There was an error when kicking: ${error}`);
     }
   },
 

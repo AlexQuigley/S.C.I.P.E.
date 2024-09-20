@@ -21,11 +21,13 @@ module.exports = {
 
     const targetUser = await interaction.guild.members.fetch(targetUserId);
 
+    //Checks if user exsists in server
     if (!targetUser) {
       await interaction.editReply("That user doesn't exist in this server.");
       return;
     }
 
+    //Checks if user is server owner
     if (targetUser.id === interaction.guild.ownerId) {
       await interaction.editReply(
         "You can't ban that user because they're the server owner."
@@ -33,6 +35,8 @@ module.exports = {
       return;
     }
 
+    //Checks role permission higherarchy for proper authority
+    //(Not allowed to ban someone with higher role permissions than you or the bot)
     const targetUserRolePosition = targetUser.roles.highest.position; // Highest role of the target user
     const requestUserRolePosition = interaction.member.roles.highest.position; // Highest role of the user running the cmd
     const botRolePosition = interaction.guild.members.me.roles.highest.position; // Highest role of the bot
@@ -59,6 +63,7 @@ module.exports = {
       );
     } catch (error) {
       console.log(`There was an error when banning: ${error}`);
+      await interaction.editReply(`There was an error when banning: ${error}`);
     }
   },
 

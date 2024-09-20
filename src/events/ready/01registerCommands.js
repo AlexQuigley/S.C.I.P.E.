@@ -64,6 +64,7 @@ module.exports = async (client) => {
       }
     }
   } catch (error) {
-    console.log(`There was an error: ${error}`);
+    console.log(`There was an error registering commands: ${error}`);
+    await interaction.editReply(`There was an error registering commands: ${error}`);
   }
 };
