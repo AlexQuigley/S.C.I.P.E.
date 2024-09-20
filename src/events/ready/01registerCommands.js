@@ -1,4 +1,3 @@
-
 //Registers slash commands when bot comes online
 
 const { testServer } = require('../../../config.json');
@@ -52,7 +51,7 @@ module.exports = async (client) => {
           );
           continue;
         }
-        
+
         //If local command does not exist on bot and it is not set to be 
         //deleted, then: registers command with bot.
         await applicationCommands.create({
