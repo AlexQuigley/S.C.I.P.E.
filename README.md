@@ -2,8 +2,9 @@
 ### `Smart Computer Interface for Protocol Execution`
 
 ## Documentation  
-- [**Discord.js documentation:**](https://discord.js.org/)
-- [**GitHUb REST API Documentation:**](https://docs.github.com/en/rest?apiVersion=2022-11-28)  
+- [**Discord.js documentation**](https://discord.js.org/)
+- [**GitHUb REST API Documentation**](https://docs.github.com/en/rest?apiVersion=2022-11-28)
+- [**Skyra - Discord.js based bot for reference**](https://github.com/skyra-project/skyra)
 
 Youtube Vids Thay _might_ be helpful:
 - [GitHub API Tutorial | 2023](https://www.youtube.com/watch?v=-kFyPaHNgXo)  
