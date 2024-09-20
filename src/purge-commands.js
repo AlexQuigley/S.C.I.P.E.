@@ -5,7 +5,7 @@
 * |---------------------------------------------------------|
 */
 
-//WILL BE REPLACED BY 01registerCommands.js <-------
+//THIS IS NOW REDUNDANT
 
 
 

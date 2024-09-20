@@ -1,3 +1,7 @@
+
+//THIS IS NOW REDUNDANT
+
+
 /*----------------------------------------------------------------------------------------------*
 * This is the COMMANDS file that will hold the basic code for all slash commands for the bot.   *
 * Run this file to register new slash commands or to purge slash commands                       *

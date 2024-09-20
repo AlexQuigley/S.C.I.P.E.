@@ -1,20 +1,27 @@
+//A re-useable function sometimes called by other functions that will
+//return the current filestructure of a given file tree.
+
 const fs = require('fs');
 const path = require('path');
 
 module.exports =(directory, foldersOnly = false) => {
-    let fileNames = [];
+    //Array to store file names
+    let fileNames = []; 
 
-    const files = fs.readdirSync(directory, {withFileTypes: true})
+    //Import any files/folders inside a specific directory
+    const files = fs.readdirSync(directory, { withFileTypes: true });
 
-
+    //Loop for checking if something is a file or a folder
     for (const file of files) {
         const filePath = path.join(directory, file.name);
 
-        if(foldersOnly){
+        if (foldersOnly) {
+            //If a file is a folder:
             if(file.isDirectory()){
                 fileNames.push(filePath);
             }
         } else {
+            //If a file is a file:
             if(file.isFile()){
                 fileNames.push(filePath);
             }

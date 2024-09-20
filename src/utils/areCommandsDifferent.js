@@ -1,3 +1,6 @@
+
+//Checks if two commands are different
+
 module.exports = (existingCommand, localCommand) => {
     const areChoicesDifferent = (existingChoices, localChoices) => {
       for (const localChoice of localChoices) {
@@ -43,9 +46,12 @@ module.exports = (existingCommand, localCommand) => {
       return false;
     };
   
-    if (
-      existingCommand.description !== localCommand.description ||
-      existingCommand.options?.length !== (localCommand.options?.length || 0) ||
+  if (
+    //Checks to see if the descriptions are the same
+    existingCommand.description !== localCommand.description ||
+    //Checks to see if the options length has changed
+    existingCommand.options?.length !== (localCommand.options?.length || 0) ||
+    //Checks if the options have changed
       areOptionsDifferent(existingCommand.options, localCommand.options || [])
     ) {
       return true;
