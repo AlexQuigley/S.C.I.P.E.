@@ -7,7 +7,7 @@
 - [**GitHUb REST API Documentation**](https://docs.github.com/en/rest?apiVersion=2022-11-28)
 - [**Skyra - Discord.js based bot for reference**](https://github.com/skyra-project/skyra)
 
-# Tutorials:
+### Tutorials:
 - [**Setup Tutorial**](https://www.youtube.com/watch?v=KZ3tIGHU314)
 - [**DATABASE Setup! Sequelize & SQLite3 Tutorial | discord.js v14 (2023)**](https://www.youtube.com/watch?v=-3DiPj6S4x8)
 
