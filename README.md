@@ -60,7 +60,7 @@ BOT_ID = <Bot ID>
 4) Assuming everything is correct, the bot should startup when you run `nodemon` or `node src/index.js` in the terminal. [^3] [^4]
 
 ## File Structure:
-
+![SCIPY file structure drawio (2)](https://github.com/user-attachments/assets/00809ca6-fe3d-4f5d-9d9e-f9795961dca5)
 ## Dev Goals:  
 #### Automated Student Assignments:  
 > Develop a fully automated system that, once students are assigned teams in the Teambuilder app, immediately adds them to the appropriate GitHub repositories and Discord channels without manual intervention.  
