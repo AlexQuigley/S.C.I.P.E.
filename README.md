@@ -1,6 +1,7 @@
 # `S.C.I.P.E.` "Skippy"
 ### `Smart Computer Interface for Protocol Execution`
-
+# TODO:
+Convert SCIPE to typescript
 ## Documentation  
 - [**Discord.js documentation**](https://discord.js.org/)
 - [**Discord.js Guide**](https://discordjs.guide/)
