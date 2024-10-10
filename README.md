@@ -1,7 +1,19 @@
 # `S.C.I.P.E.` "Skippy"
 ### `Smart Computer Interface for Protocol Execution`
 # TODO:
-Convert SCIPE to typescript - Stephan & Bao
+- Convert SCIPE to typescript - Stephan & Bao
+- Build relational datastructure functions()
+- Test relational datastructures with dummy data
+- Convert SCIPE slash command functions to API calls
+
+# Project Contributors: 
+**[Lead Dev]** - _Alex Quigley_  
+**[Senior Dev]** - _Stephan Antonyuk_  
+**[Senior Dev]** - _Bao Nguyen_  
+
+**[Instructor]** - _Jeanie Arid_  
+**[Instructor]** - _Taz Nakonecznyj a.k.a. The Tazmanian Devil_  
+**[Mentor]** - _Sagar Dhaduk_  
 ## Documentation  
 - [**Discord.js documentation**](https://discord.js.org/)
 - [**Discord.js Guide**](https://discordjs.guide/)
